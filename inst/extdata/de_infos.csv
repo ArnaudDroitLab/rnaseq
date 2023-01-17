@@ -1,0 +1,3 @@
+id_de,group,contrast_1,contrast_2,formula,filter,count_matrix
+A_vs_B,group,A,B,~group,2,NA
+B_vs_A,group,B,A,~group,2,NA

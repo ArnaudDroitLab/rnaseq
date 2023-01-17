@@ -1,0 +1,10 @@
+id,ensembl_gene,symbol,entrez_id,transcript_type
+gene1_tx1,gene1,g1,123,protein_coding
+gene1_tx2,gene1,g1,123,retained_intron
+gene1_tx3,gene1,g1,123,nonsense_mediated_decay
+gene2_tx1,gene2,g2,456,protein_coding
+gene2_tx2,gene2,g2,456,retained_intron
+gene3_tx1,gene3,g3,789,protein_coding
+gene3_tx2,gene3,g3,789,retained_intron
+gene3_tx3,gene3,g3,789,nonsense_mediated_decay
+gene3_tx4,gene3,g3,789,protein_coding

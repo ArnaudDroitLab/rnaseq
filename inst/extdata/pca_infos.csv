@@ -1,0 +1,3 @@
+﻿id_plot,group,group_val,use_ruv,use_combat,min_counts,id_metadata,size,shape,color,title,legend.position,legend.box
+test_grp1,group,group1,FALSE,FALSE,5,id,3,shape,color,test grp1,bottom,vertical
+test_grp2,group,group2,FALSE,FALSE,5,id,2,color,shape,test grp2,bottom,vertical

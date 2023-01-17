@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+*.swp
+data-raw/*csv
+data-raw/*rds
+data-raw/*RData
+data-raw/*gz
+data-raw/*txt
+datasets/*
+*pdf
+*.Rproj

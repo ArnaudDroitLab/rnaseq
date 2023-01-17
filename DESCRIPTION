@@ -1,0 +1,37 @@
+Package: rnaseq
+Title: Wrapper Functions for RNA-Seq Post-Processing
+Version: 1.0.8
+Authors@R: person("Charles", "Joly Beauparlant", email =
+                  "Charles.Joly-Beauparlant@crchul.ulaval.ca",
+                  role = c("aut", "cre"))
+Description: Wrapper functions to import quantification data, to process the
+             results (normalization and DE) and to produce deliverables.
+Depends:
+    R (>= 3.5.0),
+    DESeq2 (>= 1.28.0),
+    RUVSeq (>= 1.22.0)
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports:
+    readr,
+    dplyr,
+    tidyr,
+    stringr,
+    tximport,
+    FactoMineR,
+    ggplot2,
+    ggrepel,
+    tibble,
+    purrr,
+    rhdf5,
+    magrittr,
+    EDASeq,
+    parallel,
+    checkmate,
+    rmarkdown,
+    R.utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

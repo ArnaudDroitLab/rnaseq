@@ -1,0 +1,10 @@
+target_id	length	eff_length	est_counts	tpm
+gene1_tx1	8	9	1	2
+gene1_tx2	13	14	2	4
+gene1_tx3	9	10	3	6
+gene2_tx1	37	10.5	4	8
+gene2_tx2	19	5	5	10
+gene3_tx1	17	3	6	12
+gene3_tx2	20	6	7	14
+gene3_tx3	17	3	8	16
+gene3_tx4	17	3	9	18

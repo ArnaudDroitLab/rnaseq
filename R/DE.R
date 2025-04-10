@@ -168,7 +168,6 @@ split_de_results <- function(de_res, p_threshold = 0.05, fc_threshold = 1.5,
 #' @importFrom DESeq2 counts
 #' @importFrom SummarizedExperiment colData
 #' @importFrom tibble rownames_to_column
-#' @importFrom dplyr full_join
 #' @importFrom dplyr relocate
 #' @importFrom dplyr last_col
 #' @importFrom dplyr select
@@ -185,8 +184,7 @@ format_de_results <- function(dds, txi, contrast, keep_stats = TRUE, add_mean_dd
         tibble::rownames_to_column("id")
     stopifnot(all(de_res$id %in% txi$anno$id))
 
-    de_res <- de_res %>%
-        dplyr::full_join(txi$anno, by = "id")
+    de_res <- dplyr::left_join(txi$anno, de_res, by "id")
     if (keep_stats) {
         de_res <- de_res %>%
             dplyr::relocate(baseMean, lfcSE, stat, log2FoldChange, pvalue,

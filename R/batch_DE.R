@@ -52,7 +52,6 @@
 #' @importFrom readr read_csv
 #' @importFrom stringr str_detect
 #' @importFrom tibble rownames_to_column
-#' @importFrom dplyr full_join
 #' @importFrom dplyr select
 #' @importFrom dplyr everything
 #' @importFrom readr write_csv
@@ -155,8 +154,8 @@ batch_de <- function(de_infos, txi, design, outdir = NULL, r_objects = NULL,
                 }
                 #### TODO: verify ahead
                 if(!("id" %in% colnames(tmp))){
-                    tmp <- tmp %>% tibble::rownames_to_column("id") %>%
-                        dplyr::full_join(txi$anno, by = "id") %>%
+                    tmp <- tmp %>% tibble::rownames_to_column("id")
+                    tmp <- dplyr::left_join(txi$anno, tmp, by = "id") %>%
                         dplyr::select(id, ensembl_gene:transcript_type, dplyr::everything())
                         readr::write_csv(output_csv)
                 } else {

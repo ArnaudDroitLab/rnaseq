@@ -58,7 +58,6 @@
 #'
 #' @importFrom parallel mclapply
 #' @importFrom tibble rownames_to_column
-#' @importFrom dplyr full_join
 #' @importFrom dplyr select
 #' @importFrom dplyr everything
 #' @importFrom readr write_csv

@@ -1,6 +1,6 @@
 Package: rnaseq
 Title: Wrapper Functions for RNA-Seq Post-Processing
-Version: 1.0.15
+Version: 1.0.16
 Authors@R: person("Charles", "Joly Beauparlant", email =
                   "Charles.Joly-Beauparlant@crchul.ulaval.ca",
                   role = c("aut", "cre"))

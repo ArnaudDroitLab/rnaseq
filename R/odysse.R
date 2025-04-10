@@ -220,6 +220,7 @@ format_de_odysse <- function(de_res, txi, samples_grp1, samples_grp2,
         stopifnot(is(txi$dummy, "character"))
         stopifnot("abundance" %in% txi$dummy)
     }
+    stopifnot(identical(de_res$id, rownames(txi$abundance)))
 
     de_res <- dplyr::mutate(de_res,
                mean_TPM_grp1 = rowMeans(txi$abundance[,samples_grp1]),

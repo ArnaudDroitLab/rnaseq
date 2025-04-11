@@ -114,6 +114,7 @@ produce_odysse_format <- function(res, outdir, prefix, use_ruv = FALSE,
         current_de
     } 
     res_de <- map(names(de$gene), save_de)
+    names(res_de) <- names(de$gene)
 
     invisible(list(counts = counts, de = res_de))
 }
